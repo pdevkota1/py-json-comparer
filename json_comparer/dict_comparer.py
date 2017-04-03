@@ -106,20 +106,3 @@ def comparer(elem1, elem2, path="", dict1_name="dict1", dict2_name="dict2"):
         res.update(other_comparer(elem1, elem2, path=path, dict1_name=dict1_name, dict2_name=dict2_name))
     return res
 
-
-if __name__ == "__main__":
-    dict_1 = {
-        "key1": "val1",
-        "key2": "val2",
-        "key4": "val4",
-        "key6": [{"k10": "v10"}, {"k11": "v11"}],
-    }
-
-    dict_2 = {
-        "key1": "val1",
-        "key2": "val2",
-        "key4": "val4",
-        "key6": [{"k10": "v10"}, {"k11": "v12"}],
-    }
-
-    print comparer(dict_1, dict_2, dict2_name="blah", dict1_name="fooo")
