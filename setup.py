@@ -7,5 +7,5 @@ setup(name='py-json-comparer',
       author='Prabesh Devkota',
       author_email='prabesh.devkota@gmail.com',
       license='MIT',
-      #packages=['funniest'],
+      packages=['json_comparer'],
       zip_safe=False)
