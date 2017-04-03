@@ -11,22 +11,21 @@ Usage:
 
 from json_comparer.dict_comparer import comparer
 
-    json1 = {
+json1 = {
         "key1": "val1",
         "key2": "val2",
         "key4": "val4",
         "key6": [{"k10": "v10"}, {"k11": "v11"}],
     }
 
-    json2 = {
+json2 = {
         "key1": "val1",
         "key2": "val2",
         "key4": "val5",
         "key6": [{"k10": "v10"}, {"k11": "v12"}],
     }
-    
-   print comparer(json1, json2, dict2_name="json1", dict1_name="json2")
 
+print comparer(json1, json2, dict2_name="json1", dict1_name="json2")
 
 #Result is:
 #{'.key4': {'json2': 'val4', 'json1': 'val5'}, 
