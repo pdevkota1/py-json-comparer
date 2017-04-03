@@ -6,10 +6,10 @@ JSON objects to be passed in can be dict, list, or the response of json.loads().
 
 Usage: 
 
-...python
-from json_comparer.dict_comparer import comparer
 
-comparer(json1, json2, dict1_name="json1", dict2_name="json2")
+```python
+
+from json_comparer.dict_comparer import comparer
 
     json1 = {
         "key1": "val1",
@@ -26,11 +26,10 @@ comparer(json1, json2, dict1_name="json1", dict2_name="json2")
     }
     
    print comparer(json1, json2, dict2_name="json1", dict1_name="json2")
-   
-   ...
 
-Result is:
 
-   {'.key4': {'json2': 'val4', 'json1': 'val5'}, 
-   '.key6[1].k11': {'json2': 'v11', 'json1': 'v12'}}
+#Result is:
+#{'.key4': {'json2': 'val4', 'json1': 'val5'}, 
+#   '.key6[1].k11': {'json2': 'v11', 'json1': 'v12'}}
 
+```
