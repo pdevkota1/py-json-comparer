@@ -4,7 +4,7 @@ python json / dictionary comparer
 Python module to compare two JSON objects and return diffs at the lowest possible level in a flattened dictionary with dot separated concanated keys as resulting key and both the values in a dictionary within it.  If the object are lists and are of the same length, the key has the index of the diff element and elements are further analyzed. 
 JSON objects to be passed in can be dict, list, or the response of json.loads().
 
-A web service that uses this module to return the diff is hosted at json-compare.com[http://www.json-compare.com]
+A web service that uses this module to return the diff is hosted at [json-compare.com](http://json-compare.com/)
 
 Usage: 
 
